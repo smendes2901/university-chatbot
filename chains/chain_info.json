@@ -1,0 +1,30 @@
+[
+    {
+        "name": "financing_a_stevens_education",
+        "description": "This contains all the information in regards to helping students finance their education at Stevens by providing information regarding financing sources, institution financing programs, financial aid and state financing"
+    },
+    {
+        "name": "tuition_fees_and_other_expenses_for_undergraduate_students",
+        "description": "This contains all the information regarding tution fees and additional fees for undergraduate students"
+    },
+    {
+        "name": "tuition_fees_and_other_expenses_for_graduate_students",
+        "description": "This contains all the information regarding tution fees and additional fees for graduate students"
+    },
+    {
+        "name": "student_life_at_stevens",
+        "description": "This contains all the information regarding student services including sports, code of conduct and student government bodies"
+    },
+    {
+        "name": "student_services_at_stevens",
+        "description": "This contains all the information regarding academic tutoring, career guidance, counseling, disability accommodations, financial aid management, health services, and housing options to facilitate student success and well-being"
+    },
+    {
+        "name": "graduate_education_at_stevens",
+        "description": "This contains all the information regarding graduate student structured academic programs, admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
+    },
+    {
+        "name": "undergraduate_education_at_stevens",
+        "description": "This contains all the information regarding undergraduate student structured academic programs, admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
+    }
+]
