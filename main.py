@@ -1,41 +1,46 @@
 import json
 from langchain_community.llms import OpenAI
-import streamlit as st
 
-from chains.base import CommonChain
+
+from chains.common import CommonChain
+from chains.program import ProgramChain
 from embedding import initialize_embeddings
 from models import initialize_llm
 from router import PromptRouter
 
-llm = initialize_llm("gpt3")
+llm = initialize_llm("gpt4")
 embeddings = initialize_embeddings()
 
 chain_info = json.load(open("chains/chain_info.json"))
-# chain_info = dict((c["name"], c["description"]) for c in chain_info)
-
-finance_chain = CommonChain("data/financing-a-stevens-education.csv", embeddings)
-graudate_chain = CommonChain("./data/graduate-education.csv", embeddings)
-undergraduate_chain = CommonChain("data/undergraduate-education.csv", embeddings)
-student_life = CommonChain("data/student-life.csv", embeddings)
-student_services = CommonChain("data/student-services.csv", embeddings)
-graudate_tution_chain = CommonChain(
-    "data/tuition-fees-and-other-expenses-for-graduate-students.csv", embeddings
-)
-undergraudate_tution_chain = CommonChain(
-    "data/tuition-fees-and-other-expenses-for-undergraduate-students.csv", embeddings
-)
 
 chains = {
-    "financing_a_stevens_education": finance_chain,
-    "tuition_fees_and_other_expenses_for_undergraduate_students": undergraudate_tution_chain,
-    "tuition_fees_and_other_expenses_for_graduate_students": graudate_tution_chain,
-    "student_life_at_stevens": student_life,
-    "student_services_at_stevens": student_services,
-    "graduate_education_at_stevens": graudate_chain,
-    "undergraduate_chain": undergraduate_chain,
+    "financing_a_stevens_education": CommonChain(
+        "financing_a_stevens_education", embeddings
+    ),
+    "tuition_fees_and_other_expenses_for_undergraduate_students": CommonChain(
+        "tuition_fees_and_other_expenses_for_undergraduate_students", embeddings
+    ),
+    "tuition_fees_and_other_expenses_for_graduate_students": CommonChain(
+        "tuition_fees_and_other_expenses_for_graduate_students", embeddings
+    ),
+    "student_life_at_stevens": CommonChain("student_life_at_stevens", embeddings),
+    "student_services_at_stevens": CommonChain(
+        "student_services_at_stevens", embeddings
+    ),
+    "graduate_education_at_stevens": CommonChain(
+        "graduate_education_at_stevens", embeddings
+    ),
+    "undergraduate_education_at_stevens": CommonChain(
+        "undergraduate_education_at_stevens", embeddings
+    ),
+    "program_info_at_stevens": ProgramChain("department_info", embeddings),
+    "off_campus_employment": CommonChain("off_campus_employment", embeddings),
+    "course_info": CommonChain("course_info", embeddings),
 }
 
 router = PromptRouter(llm=llm, chain_info=chain_info)
+
+import streamlit as st
 
 st.title("Stevens WebUI")
 

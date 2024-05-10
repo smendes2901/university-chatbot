@@ -1,3 +1,6 @@
 *.txt
 *.html
 *.csv
+*.zip
+*/chromadb/*
+*__pycache__*

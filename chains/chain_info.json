@@ -21,10 +21,22 @@
     },
     {
         "name": "graduate_education_at_stevens",
-        "description": "This contains all the information regarding graduate student structured academic programs, admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
+        "description": "This contains all the information regarding graduate student structured admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
     },
     {
         "name": "undergraduate_education_at_stevens",
-        "description": "This contains all the information regarding undergraduate student structured academic programs, admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
+        "description": "This contains all the information regarding undergraduate student structured admissions guidance, course options, grading policies, English proficiency support for international students, and procedures for academic standing and progression"
+    },
+    {
+        "name": "program_info_at_stevens",
+        "description": "This contains all the details regarding bachelors, masters, phd and engineering programs. Questions relating to elective courses, core courses and details regarding a particular program are available here"
+    },
+    {
+        "name": "off_campus_employment",
+        "description": "This contains information regarding off campus employment for students on various visas"
+    },
+    {
+        "name": "course_info",
+        "description": "This contains information regarding each individual course for a program including its credit count. Sample question are: Provide me a few courses with 1 credit. What is course EE 684?"
     }
 ]
