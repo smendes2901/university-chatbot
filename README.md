@@ -29,10 +29,12 @@ The chatbot includes information on the following topics:
 To interact with the chatbot, simply run the Streamlit application and choose the topic you are interested in from the main menu. The chatbot will guide you through the available information and answer any specific queries you may have.
 
 ## Installation
+The code has been built on python==3.11.5   
+Ensure you store the OPENAI_API_KEY  in an environment variable
 
 1. Clone this repository
-2. Navigate to the project directory
-3. Install the required dependencies
-4. Run the Streamlit app
+2. Install the required dependencies using `pip install -r requirements.txt`
+3. Upload all the data to the ChromaDB using `notebooks/chromadb_upload.ipynb`
+3. Run the Streamlit app `streamlit run main.py`. If you want to run in notebook use `e2e.ipynb`
 
 Thank you for visiting and using the Stevens Institute of Technology Chatbot!

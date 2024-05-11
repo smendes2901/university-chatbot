@@ -1,9 +1,8 @@
 import json
-from langchain_community.llms import OpenAI
-
-
 from chains.common import CommonChain
 from chains.program import ProgramChain
+from chains.course import CourseChain
+from chains.default import DefaultChain
 from embedding import initialize_embeddings
 from models import initialize_llm
 from router import PromptRouter
@@ -35,28 +34,22 @@ chains = {
     ),
     "program_info_at_stevens": ProgramChain("department_info", embeddings),
     "off_campus_employment": CommonChain("off_campus_employment", embeddings),
-    "course_info": CommonChain("course_info", embeddings),
+    "course_info": CourseChain("course_info_v1", embeddings),
 }
+
+print(chains["course_info"].vectorstore._collection.count())
 
 router = PromptRouter(llm=llm, chain_info=chain_info)
 
 import streamlit as st
 
-st.title("Stevens WebUI")
-
-
-def generate_response(input_text):
-    llm = OpenAI(temperature=0)
-    st.info(llm(input_text))
-
+st.title("UNIGUIDE: STEVENS AI NAVIGATOR")
 
 with st.form("my_form"):
-    text = st.text_area("Enter text:")
+    text = st.text_area("Enter text:", "Hello")
     chain_name = router.get_chain_name(prompt=text)
-    curr_chain = chains.get(chain_name)
+    print(chain_name)
+    curr_chain = chains.get(chain_name, DefaultChain())
     submitted = st.form_submit_button("Submit")
-    if curr_chain:
-        response = curr_chain.process_prompt(llm, prompt=text)
-        st.markdown(response["answer"])
-    else:
-        generate_response(text)
+    response = curr_chain.process_prompt(llm, prompt=text)
+    st.markdown(response["answer"])

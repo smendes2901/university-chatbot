@@ -1,7 +1,7 @@
 from langchain_core.runnables import RunnableParallel
 from langchain_core.output_parsers import StrOutputParser
 from chains.utils import format_docs
-from prompt import chat_template
+from prompt import BASIC_CHAT_TEMPLATE
 from langchain_core.runnables import RunnablePassthrough
 from langchain_chroma import Chroma
 
@@ -18,7 +18,7 @@ class CommonChain:
     def process_prompt(self, llm, prompt: str) -> str:
         rag_chain_from_docs = (
             RunnablePassthrough.assign(context=(lambda x: format_docs(x["context"])))
-            | chat_template
+            | BASIC_CHAT_TEMPLATE
             | llm
             | StrOutputParser()
         )

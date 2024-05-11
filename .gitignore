@@ -4,3 +4,5 @@
 *.zip
 */chromadb/*
 *__pycache__*
+
+!requirements.txt

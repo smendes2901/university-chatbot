@@ -1,11 +1,10 @@
-from prompt import chat_template
+from prompt import BASIC_CHAT_TEMPLATE
 from chains.common import CommonChain
 from langchain.chains.query_constructor.base import AttributeInfo
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain.retrievers.self_query.chroma import ChromaTranslator
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
-from langchain_chroma import Chroma
 
 
 META_FIELD_INFO = [
@@ -61,7 +60,7 @@ class ProgramChain(CommonChain):
             enable_limit=True,
         )
 
-        combine_docs_chain = create_stuff_documents_chain(llm, chat_template)
+        combine_docs_chain = create_stuff_documents_chain(llm, BASIC_CHAT_TEMPLATE)
         retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
 
         retriever_prompt = f"""
