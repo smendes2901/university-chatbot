@@ -34,7 +34,7 @@ chains = {
     ),
     "program_info_at_stevens": ProgramChain("department_info", embeddings),
     "off_campus_employment": CommonChain("off_campus_employment", embeddings),
-    "course_info": CourseChain("course_info_v1", embeddings),
+    "course_info": CourseChain("course_info", embeddings),
 }
 
 print(chains["course_info"].vectorstore._collection.count())
@@ -43,7 +43,7 @@ router = PromptRouter(llm=llm, chain_info=chain_info)
 
 import streamlit as st
 
-st.title("UNIGUIDE: STEVENS AI NAVIGATOR")
+st.title("UNIGUIDE🦆")
 
 with st.form("my_form"):
     text = st.text_area("Enter text:", "Hello")

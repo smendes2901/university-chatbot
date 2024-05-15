@@ -1,0 +1,58 @@
+What are the core courses to take in MS in Machine Learning?
+Core Courses (Complete Four)	Credits
+CS 541 Artificial Intelligence	3
+CS 559 Machine Learning: Fundamentals and Applications	3
+CS 560 Statistical Machine Learning	3
+CS 583 Deep Learning	3
+CS 584 Natural Language Processing	3
+
+What are the core Electives an MS in Machine Learning student can take?
+The core electives an MS in Machine Learning student can take at Stevens Institute of Technology are as follows:
+Course Number	Course Name	Credits
+CS 513	Knowledge Discovery and Data Mining	3
+CS 532	3D Computer Vision	3
+CS 544	Health Informatics	3
+CS 556	Mathematical Foundations of Machine Learning	3
+CS 558	Computer Vision	3
+CS 582	Causal Inference	3
+CS 589	Text Mining and Information Retrieval	3
+CS 598	Visual Information Retrieval	3
+CS 609	Data Management and Exploration on the Web	3
+BIA 654	Experimental Design II	3
+BIA 660	Web Mining	3
+BIA 662	Augmented Intelligence and Generative AI	3
+BIA 678	Big Data Technologies	3
+CPE 608	Applied Modeling and Optimization	3
+CPE 695	Applied Machine Learning	3
+FE 541	Applied Statistics with Applications in Finance	3
+MA 541	Statistical Methods	3
+MA 630	Advanced Optimization Methods	3
+MA 641	Time Series Analysis I	3
+MA 661	Dynamic Programming and Reinforcement Learning	3
+CS 800	Special Problems in Computer Science (M.S.)	1-6
+CS 900	Thesis in Computer Science (M.S.)	1-10
+
+What is the pre requisite of the course CS 559?
+The prerequisite for the course CS 559 Machine Learning: Fundamentals and Applications is either (MA 222 and MA 232) or CS 556, and the student must be a Graduate Student or have a standing of Junior or Senior.
+
+What is the course CS 513 about?
+CS 513, Knowledge Discovery and Data Mining, is a course that introduces fundamental and practical tools, techniques, and algorithms for Knowledge Discovery and Data Mining (KD&DM). It provides a balanced approach between methods and practice, covering techniques for transforming corporate data into business intelligence, including online Analytical Processing (OLAP) Systems, Artificial Neural Networks (ANN), Rule-Based Systems (RBS), Fuzzy Logic (FL), Machine Learning (ML), Classification Trees (C4.5 Algorithm), and Classification and Regression Trees (CART Algorithm). The course also includes case studies from real-world applications to demonstrate the application of these techniques to real-world problems. The course is worth 3 credits and is typically offered in both the Fall and Spring semesters. It is available to graduate students or those who are at least juniors in their undergraduate studies. The course is part of the Computer Science Program.
+
+What is the course CS 559 about and how many credits is it worth?
+Based on the provided context, someone interested in finance and marketing can take the following courses at Stevens Institute of Technology:
+FIN 684 Financial Services Industry Marketing and Sales - This course focuses on selling and marketing IT strategies in the financial services industry, covering topics such as the "sell-side," the "buy-side," the selling distribution process, e-business selling strategies, marketing strategies, corporate branding, data warehousing, sales data mining, and client partnerships. It is worth 3 credits.
+MGT 641 Marketing Management - This course covers marketing principles from conceptual, analytical, and managerial perspectives, including strategic planning, market segmentation, product life-cycle, new product development, advertising and selling, pricing, distribution, and the impact of governmental and other environmental factors on markets and business structure. It is also worth 3 credits and is typically offered in the Fall Semester, Spring Semester, and Summer Session 1.
+Both courses are distributed through the School of Business.
+
+Can I, an MS in Machine Learning student take the course BIA-613 as my core subject?
+No, as an MS in Machine Learning student, you cannot take BIA-613 as a core subject. BIA-613 is not listed under the Machine Learning Core Requirements or Machine Learning Core Electives Requirements for the MS in Machine Learning program. However, you may be able to take it as a general elective, as the program allows for 3 general electives which can be any graduate course.
+Course Number	Course Name	Credits	Can be taken as Core Subject?
+BIA-613	Not Listed	Not Listed	No
+Please consult with your academic advisor to confirm if you can include BIA-613 as a general elective in your study plan.
+
+If an MS in machine learning student takes the course CPE-695 will it count as one of their core electives?
+Course Number	Course Name	Credits	Counts as Core Elective
+CPE 695	Applied Machine Learning	3	Yes
+
+What courses should I take in my first and second semester in Masters in Machine Learning?
+I don't know the specific courses you should take in your first and second semester in the Masters in Machine Learning program at Stevens Institute of Technology. However, you should consult the program's curriculum and your academic advisor to determine the required and elective courses for your degree. If you are an international student and depending on your English proficiency test scores, you may also need to take English Language Communication (ELC) courses such as ELC 071, ELC 081, or ELC 091.

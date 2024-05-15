@@ -1,5 +1,5 @@
 # Stevens Institute of Technology Chatbot
-
+![landing](imgs/landing.png)
 Welcome to the repository for the Stevens Institute of Technology Chatbot. This chatbot is designed to assist students, faculty, and prospective applicants by providing detailed information about various aspects of university life and administration at Stevens Institute of Technology. Built using Langchain, Streamlit, and GPT-4, this chatbot offers a user-friendly interface and comprehensive details across a range of topics.
 
 ## Features
